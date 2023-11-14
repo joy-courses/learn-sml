@@ -1,4 +1,5 @@
-fun timeBefore((h1, m1, "AM"), (h2, m2, "AM")) = false;
+fun timeBefore((h1, m1, t1), (h2, m2, t2)) = 
+    
 
 timeBefore((1, 59, "AM"), (2, 40, "PM")) = true;
 timeBefore((1, 59, "PM"), (2, 40, "PM")) = true;
