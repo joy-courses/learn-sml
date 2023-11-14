@@ -1,6 +1,8 @@
-fun fib(0) = 0
-| fib(1) = 1
-| fib(n) = fib(n-2) + fib(n-1);
+fun fibhr(a, b, 0) = a 
+| fibhr(a, b, 1) = b
+| fibhr(a, b, count) = fibhr(b, a+b, count-1)
+
+fun fib(n) = fibhr(0, 1, n);
 
 fib(10) = 55;
 fib(8) = 21;
